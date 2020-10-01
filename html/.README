@@ -1,0 +1,13 @@
+
+
+Regex to extract the h1 caption, and ignore other html elements within
+
+#(?<=h1>)(?:.*?)((?:[^<>]|)+)(?=\<\/.*?(?=h1))#
+
+The result is in Group 1. 
+
+<h1><div>Matches</div></h1>
+
+<h1>Matches</h1>
+
+<div>h1</div> // does not match
