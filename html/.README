@@ -1,6 +1,7 @@
 
 
 Regex to extract the h1 caption, and ignore other html elements within
+https://regex101.com/r/vM1rI0/105
 
 #(?<=h1>)(?:.*?)((?:[^<>]|)+)(?=\<\/.*?(?=h1))#
 
